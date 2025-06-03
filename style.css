@@ -1,0 +1,174 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header.header {
+    background: #0074D9;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header.header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+section.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.banner-left {
+    max-width: 50%;
+}
+
+.banner-left p.deal {
+    font-size: 14px;
+    color: #FF4136;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.banner-left h2 {
+    font-size: 28px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.banner-left p {
+    font-size: 14px;
+    margin: 0 0 15px;
+    color: #555;
+}
+
+.banner-left .btn-primary {
+    background: #0074D9;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.banner-left .btn-primary:hover {
+    background: #005bb5;
+}
+
+.banner-right {
+    text-align: center;
+}
+
+.banner-right img {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.banner-right p.discount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF4136;
+    margin: 0;
+}
+
+section.vouchers {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.voucher-card {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.voucher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.voucher-card h3 {
+    font-size: 18px;
+    color: #0074D9;
+    margin: 0 0 10px;
+}
+
+.voucher-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.voucher-card .btn-secondary {
+    background: #0074D9;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.voucher-card .btn-secondary:hover {
+    background: #005bb5;
+}
+
+nav.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0074D9;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+}
+
+nav.bottom-nav a.active {
+    background: #005bb5;
+}
+
+nav.bottom-nav a:hover {
+    background: #005bb5;
+}

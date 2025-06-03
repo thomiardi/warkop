@@ -1,0 +1,227 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    display: flex;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background: #0074D9;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #0074D9;
+}
+
+.menu-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.menu-card .price {
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.menu-card button {
+    background: #0074D9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.menu-card button:hover {
+    background: #005bb5;
+}
+
+.order-panel {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-left: 1px solid #ddd;
+}
+
+.order-panel h2 {
+    margin: 0 0 20px;
+    font-size: 20px;
+    color: #0074D9;
+}
+
+.order-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.order-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    background: #0074D9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.quantity-controls button:hover {
+    background: #005bb5;
+}
+
+.quantity-controls span {
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.order-total {
+    text-align: center;
+}
+
+.clear-button {
+    background: #FF4136;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: background 0.2s ease;
+}
+
+.clear-button:hover {
+    background: #cc342b;
+}
+
+.pay-button {
+    display: inline-block;
+    background: #0074D9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.pay-button:hover {
+    background: #005bb5;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
